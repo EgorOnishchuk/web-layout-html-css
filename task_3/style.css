@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin-top: 40px;
+    margin-right: 375px;
+    margin-left: 375px;
+}
+
+.main-content {
+    margin-top: 84px;
+    margin-right: 439.25px;
+    margin-bottom: 162.45px;
+    margin-left: 373px;
+}
+
+.description__text {
+    margin-top: 17px;
+    margin-right: 56px;
+}
+
+.description__introduction {
+    margin-top: 37px;
+    margin-left: 2px;
+}
+
+.footer {
+    padding-top: 97px;
+    padding-right: 375px;
+    padding-bottom: 96px;
+    padding-left: 345px;
+}
