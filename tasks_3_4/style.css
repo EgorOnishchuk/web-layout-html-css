@@ -1,10 +1,12 @@
 @font-face {
-    font-family: "Gilroy-Bold";
-    src: url("fonts/gilroy_bold.ttf");
-    font-family: "Gilroy-Semibold";
-    src: url("fonts/gilroy_semibold.ttf");
-    font-family: "Gilroy-Medium";
-    src: url("fonts/gilroy_medium.ttf");
+    font-family: 'Gilroy-Bold';
+    src: url('fonts/gilroy_bold.ttf');
+    font-family: 'Gilroy-Semibold';
+    src: url('fonts/gilroy_semibold.ttf');
+    font-family: 'Gilroy-Medium';
+    src: url('fonts/gilroy_medium.ttf');
+    font-family: 'Gilroy-Regular';
+    src: url('fonts/gilroy_regular.ttf');
 }
 
 * {
@@ -12,11 +14,15 @@
     padding: 0;
 }
 
+body {
+    background: #FFF;
+}
+
 a {
     text-decoration: none;
 }
 
-.top__header {
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,13 +37,12 @@ a {
     align-items: center;
     flex-wrap: wrap;
     flex-shrink: 0;
-    flex-shrink: 0;
     gap: 14px;
 }
 
 .name__grow-part {
     color: #000;
-    font-family: "Gilroy-Bold", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -46,7 +51,7 @@ a {
 
 .name__be-part {
     color: #F25822;
-    font-family: "Gilroy-Bold", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -63,7 +68,7 @@ a {
 
 .nav-bar__selected-item {
     color: #F25822;
-    font-family: "Gilroy-SemiBold", sans-serif;
+    font-family: 'Gilroy-SemiBold', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -72,14 +77,18 @@ a {
 
 .nav-bar__item {
     color: #000;
-    font-family: "Gilroy-Medium", sans-serif;
+    font-family: 'Gilroy-Medium', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.top__main-content {
+.nav-bar__item-dropdown {
+    display: flex;
+}
+
+.introduction {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -92,7 +101,7 @@ a {
 .description__title {
     width: 522px;
     color: #000;
-    font-family: "Gilroy-Bold", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
     font-size: 60px;
     font-style: normal;
     font-weight: 400;
@@ -102,7 +111,7 @@ a {
 .description__text {
     width: 466px;
     color: #888;
-    font-family: "Gilroy-Medium", sans-serif;
+    font-family: 'Gilroy-Medium', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -111,7 +120,7 @@ a {
     margin-bottom: 37px;
 }
 
-.description__introduction {
+.description__bottom {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -119,9 +128,9 @@ a {
     flex-shrink: 0;
 }
 
-.introduction__button {
+.bottom__button {
     color: #FFF;
-    font-family: "Gilroy-Bold", sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -132,7 +141,7 @@ a {
     padding: 15px 36px 16px 35px;
 }
 
-.introduction__link {
+.bottom__link {
     color: #AAA;
     font-family: "Gilroy-Bold", sans-serif;
     font-size: 15px;
@@ -141,11 +150,11 @@ a {
     line-height: normal;
 }
 
-.main-content__image {
+.introduction__image {
     padding-right: 63.98px;
 }
 
-.top__footer {
+.logos {
     display: flex;
     justify-content: center;
     gap: 48px;
@@ -153,4 +162,164 @@ a {
     flex-shrink: 0;
     padding-top: 97px;
     padding-bottom: 96px;
+}
+
+.opportunities {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.opportunities__card {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.opportunities__card-large {
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 40px 31px 25px 29px;
+}
+
+.card__title {
+    color: #000;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 25px;
+}
+
+.card__description {
+    color: #666;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 310px;
+    margin-top: 17px;
+    margin-bottom: 25px;
+}
+
+.card__link {
+    color: #000;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.service {
+    background: #FAFAFA;
+    padding-top: 92px;
+    padding-bottom: 100px;
+}
+
+.service__reason {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    gap: 19px;
+}
+
+.reason__title {
+    color: #000;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.reason__description {
+    color: #666;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    width: 682px;
+}
+
+.service__activities {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+.activities__activity {
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    padding-bottom: 50px;
+}
+
+.activities__activity-research {
+    margin-top: 70px;
+}
+
+.activities__activity-optimization {
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.10);
+    margin-top: 54px;
+}
+
+.activities__activity-marketing {
+    margin-top: 50px;
+}
+
+.activity__title {
+    color: #000;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.activity__description {
+    color: #AAA;
+    text-align: center;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 310px;
+    margin-top: 22px;
+    margin-bottom: 39px;
+}
+
+.activity__button {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    border: none;
+    border-radius: 50px;
+    background: #F25822;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    padding: 15px 36px 15px 46px;
 }
