@@ -211,6 +211,7 @@ body {
 
     .header__logo-block {
         margin-bottom: 18px;
+        margin-left: 16px;
     }
 
     .header__buttons {
@@ -248,10 +249,7 @@ body {
         font-size: 44px;
     }
 
-    .text__secondary-part {
-        font-size: 24px;
-    }
-
+    .text__secondary-part,
     .text__bright-part {
         font-size: 24px;
     }
@@ -259,14 +257,13 @@ body {
     .offers {
         grid-template-columns: repeat(3, 232px);
         gap: 19px;
-        margin-top: 64.95px;
     }
 
     .offers__offer-women,
     .offers__offer-men,
     .offers__offer-kids {
-        padding-top: 59px;
-        padding-bottom: 58.62px;
+        padding-top: 58px;
+        padding-bottom: 58px;
     }
 
     .offers__offer-accessories {
@@ -277,6 +274,10 @@ body {
     .products {
         margin-top: 109.92px;
         margin-bottom: 70.52px;
+    }
+
+    .products__description {
+        margin-top: 3px;
     }
 
     .products__cards {
@@ -299,5 +300,93 @@ body {
 
     .products__button {
         margin-top: 32.48px;
+    }
+}
+
+@media (max-width: 767px) {
+    .center {
+        padding-right: calc(50% - 144px);
+        padding-left: calc(50% - 144px);
+    }
+
+    .header {
+        gap: 200px;
+    }
+
+    .header__logo-block {
+        margin-left: 0;
+    }
+
+    .header__buttons {
+        margin-top: 25px;
+        margin-bottom: 26px;
+        margin-right: 0px;
+    }
+
+    .buttons__button-profile {
+        display: none;
+    }
+
+    .buttons__button-list {
+        display: none;
+    }
+
+    .banner {
+        padding-right: calc(50% - 144px);
+        padding-left: calc(50% - 144px);
+        justify-content: center;
+    }
+
+    .banner__image {
+        display: none;
+    }
+
+    .banner__description {
+        margin-top: 148px;
+        margin-bottom: 149px;
+        gap: 15px;
+    }
+
+    .text__primary-part {
+        font-size: 38px;
+    }
+
+    .text__secondary-part,
+    .text__bright-part {
+        font-size: 20px;
+    }
+
+    .offers {
+        grid-template-columns: 343px;
+        gap: 32px;
+    }
+
+    .offers__offer-women,
+    .offers__offer-men,
+    .offers__offer-kids {
+        padding-top: 98px;
+        padding-bottom: 98px;
+    }
+
+    .offers__offer-accessories {
+        grid-column: span 1;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .products {
+        margin-top: 64px;
+        margin-bottom: 85px;
+    }
+
+    .products__cards {
+        grid-template-columns: 360px;
+        margin-top: 65px;
+    }
+
+    .products__button {
+        margin-top: 41px;
     }
 }
