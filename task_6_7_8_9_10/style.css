@@ -45,6 +45,18 @@ a {
     position: relative;
 }
 
+.button__counter {
+    position: absolute;
+    left: 22px;
+    bottom: 18px;
+    padding: 1px 5px 4px 7px;
+    border-radius: 50%;
+    background-color: #F16D7F;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+}
+
 .buttons__button_list:hover .button__list {
     display: block;
 }
@@ -231,6 +243,7 @@ a {
     justify-content: center;
     align-items: center;
     position: relative;
+    transition: 0.3s;
 }
 
 .product__illustration:hover .illustration__overlay {
@@ -303,6 +316,7 @@ a {
     font-weight: 400;
     padding: 15px 39px 14px 39px;
     margin-top: 48px;
+    transition: 0.3s;
 }
 
 .products__button:hover {
@@ -411,8 +425,8 @@ a {
 .main-part__input {
     background: #e1e1e1;
     border: none;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
     padding: 7px 64px 6px 22px;
 }
 
@@ -431,9 +445,14 @@ a {
     color: #fff;
     border: none;
     padding: 7px 7px 6px 8px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
     position: absolute;
+    transition: 0.3s;
+}
+
+.main-part__button:hover {
+    background: #E05C6E;
 }
 
 .footer__information {
@@ -457,6 +476,11 @@ a {
     display: flex;
     justify-content: center;
     gap: 7px;
+}
+
+.image__background,
+.image__logo {
+    transition: 0.3s;
 }
 
 .social-media-icons__icon:hover .image__background {
